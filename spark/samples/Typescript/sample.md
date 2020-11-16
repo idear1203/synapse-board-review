@@ -16,7 +16,7 @@ return;
 
 const defaultAzureCredential = new DefaultAzureCredential();
 
-const client = new SparkClient("<workspace_endpoint>", defaultAzureCredential);
+const client = new SparkClient("<workspace_endpoint>", "spark_pool_name", defaultAzureCredential);
 ```
 
 ## Scenario 1: `Spark Bacth Job` creation
