@@ -242,3 +242,56 @@ await deleteResult.pollUntilDone();
 
 
 ## Scenario 9:  Manage trigger resource.
+
+### Creating client
+```typescript
+// Azure AD Credential information is required to run this sample:
+if (
+!process.env.AZURE_TENANT_ID ||
+!process.env.AZURE_CLIENT_ID ||
+!process.env.AZURE_CLIENT_SECRET
+) {
+console.warn(
+    "Azure AD authentication information not provided, but it is required to run this sample. Exiting."
+);
+return;
+}
+
+const defaultAzureCredential = new DefaultAzureCredential();
+
+const trigerClient = new TrigerClient("<workspace_endpoint>", defaultAzureCredential);
+```
+
+### Get
+```typescript
+let getResult = await trigerClient.get("testtriger");
+let trigger = getResult.properties as ScheduleTrigger;
+```
+
+### Create
+```typescript
+let scheduleTrigger: ScheduleTrigger = {
+    type: "ScheduleTrigger",
+    recurrence: {
+    frequency: "Minute",
+    interval: 4,
+    startTime: new Date("2018-06-16T00:39:13.8441801Z"),
+    endTime: new Date("2018-06-16T00:55:13.8441801Z"),
+    timeZone: "UTC"
+    },
+    pipelines: [
+    {
+        pipelineReference: {
+        referenceName: "testPipeline",
+        type: "PipelineReference"
+        }
+    }
+    ]
+};
+let trigger: TriggerResource = {
+    properties: scheduleTrigger
+};
+
+let getResult = await trigerClient.beginUpsert("testtriger", trigger);
+const response = await getResult.pollUntilDone();
+```

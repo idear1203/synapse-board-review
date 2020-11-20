@@ -19,31 +19,50 @@ const defaultAzureCredential = new DefaultAzureCredential();
 const client = new AccessControlClient("<workspace_endpoint>", defaultAzureCredential);
 ```
 
-## Scenario 1: List Caller's role assignments
+## Scenario 1: Get role assignments by Id
 ```typescript
-let listResult = await client.getCallerRoleAssignments();
+let getResult = await client.getRoleAssignmentById(roleAssignmentId);
 ```
 
 ## Scenario 2: List role definitions of synapse
 ```typescript
-const list: string[] = [];
-for await (const roleDefinition of client.listRoleDefinitions()) {
-    list.push(roleDefinition.id!);
-}
+let listResult = await client.listRoleDefinitions();
 ```
 
 ## Scenario 3: Create role assignments for specified user/service pricipal
 ```typescript
- let createResult = await client.createRoleAssignment(roleId, principalId);
+roleAssignmentId = Guid.create().toString();
+let createResult = await client.createRoleAssignment(
+    roleAssignmentId,
+    roleId,
+    principalId,
+    getScope()
+);
 ```
 
 ## Scenario 4: List role assignments under specified role definition or user/service principal
 ```typescript
-let listResult = await client.listRoleAssignments(roleId);
+let listResult = await client.listRoleAssignments({ roleId });
 ```
 
 ## Scenario 5: Delete specified role assignment using specified id
 ```typescript
-client.deleteRoleAssignmentById(roleAssignmentId);
+await client.deleteRoleAssignmentById(roleAssignmentId, { scope: getScope() });
+```
+
+## Scenario 6: Check principal accessiblity
+```typescript
+let listResult = await client.checkPrincipalAccess(
+    {
+    principalId: principalId
+    },
+    [
+    {
+        id: "Microsoft.Synapse/workspaces/read",
+        isDataAction: true
+    }
+    ],
+    getScope()
+);
 ```
 
