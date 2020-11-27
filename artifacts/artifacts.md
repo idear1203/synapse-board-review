@@ -43,39 +43,39 @@ We use an API review tool ([apiview](https://apiview.azurewebsites.net)) to supp
 
 * **Champion Scenario 1:  Get bigdata pool/sql pool/intergartion runtimes information under current workspace.** 
   * User who only have read permission can get basic resource information under current workspace. These requests are belong to data plane instead of management plane, that means these needn't routed by ARM. 
-  * Link to the code sample: [JAVA]() | [TS](./samples/Typescript/sample.md#)
+  * Link to the code sample: [C#]() | [Python]() | [JAVA]() | [TS](./samples/Typescript/sample.md#)
 
 * **Champion Scenario 2:  Manage notebook resource.** 
   * Developer manage notebook resource under current workspace. For example, create a new notebook using customized parameter and retrieve/delete exsiting notebook. 
-  * Link to the code sample: [JAVA]() | [TS](./samples/Typescript/sample.md#)
+  * Link to the code sample: [C#]() | [Python]() | [JAVA]() | [TS](./samples/Typescript/sample.md#)
 
 * **Champion Scenario 3:  Manage dateflow resource.** 
   * Developer manage dateflow resource under current workspace. For example, create a new dateflow using customized parameter and retrieve/delete exsiting dateflow. 
-  * Link to the code sample: [JAVA]() | [TS](./samples/Typescript/sample.md#)
+  * Link to the code sample: [C#]() | [Python]() | [JAVA]() | [TS](./samples/Typescript/sample.md#)
 
 * **Champion Scenario 4:  Manage dateset resource.** 
   * Developer manage dateset resource under current workspace. For example, create a new dateset using customized parameter and retrieve/delete exsiting dateset. 
-  * Link to the code sample: [JAVA]() | [TS](./samples/Typescript/sample.md#)
+  * Link to the code sample: [C#]() | [Python]() | [JAVA]() | [TS](./samples/Typescript/sample.md#)
 
 
 * **Champion Scenario 5:  Manage pipeline resource.** 
   * Developer manage pipeline resource under current workspace. For example, create a new pipeline using customized parameter and retrieve/delete exsiting pipeline. 
-  * Link to the code sample: [JAVA]() | [TS](./samples/Typescript/sample.md#)
+  * Link to the code sample: [C#]() | [Python]() | [JAVA]() | [TS](./samples/Typescript/sample.md#)
 
 * **Champion Scenario 6:  Manage sqlscript resource.** 
   * Developer manage sqlscript resource under current workspace. For example, create a new sqlscript using customized parameter and retrieve/delete exsiting sqlscript. 
-  * Link to the code sample: [JAVA]() | [TS](./samples/Typescript/sample.md#)
+  * Link to the code sample: [C#]() | [Python]() | [JAVA]() | [TS](./samples/Typescript/sample.md#)
 
 * **Champion Scenario 7:  Manage linkedservice resource.** 
   * Developer manage linkedservice resource under current workspace. For example, create a new linkedservice using customized parameter and retrieve/delete exsiting linkedservice. 
-  * Link to the code sample: [JAVA]() | [TS](./samples/Typescript/sample.md#)
+  * Link to the code sample: [C#]() | [Python]() | [JAVA]() | [TS](./samples/Typescript/sample.md#)
 
 * **Champion Scenario 8:  Manage sparkjobdefinition resource.** 
   * Developer manage sparkjobdefinition under current workspace. For example, create a new sparkjobdefinition using customized parameter and retrieve/delete exsiting sparkjobdefinition. 
-  * Link to the code sample: [JAVA]() | [TS](./samples/Typescript/sample.md#)
+  * Link to the code sample: [C#]() | [Python]() | [JAVA]() | [TS](./samples/Typescript/sample.md#)
 
 * **Champion Scenario 9:  Manage trigger resource.** 
   * Developer manage trigger resource under current workspace. For example, create a new trigger using customized parameter and retrieve/delete exsiting trigger. 
-  * Link to the code sample: [JAVA]() | [TS](./samples/Typescript/sample.md#)
+  * Link to the code sample: [C#]() | [Python]() | [JAVA]() | [TS](./samples/Typescript/sample.md#)
 
         

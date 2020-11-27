@@ -20,17 +20,17 @@ We use an API review tool ([apiview](https://apiview.azurewebsites.net)) to supp
 
 ### .NET
 
-* Upload DLL to [apiview](https://apiview.azurewebsites.net).  Link:
+* Upload DLL to [apiview](https://apiview.azurewebsites.net).  Link: https://apiview.dev/Assemblies/Review/780fa825c2d54a669c17051c32c3192c
 * Link to samples for champion scenarios:
 
 ### Java
 
-* Upload JAR to [apiview](https://apiview.azurewebsites.net).  Link:
+* Upload JAR to [apiview](https://apiview.azurewebsites.net).  Link: https://apiview.dev/Assemblies/Review/89bf9abbb70e40b4879dfd19d211be7a
 * Link to samples for champion scenarios:
 
 ### Python
 
-* Upload the api as a Draft PR.  Link to PR:
+* Upload the api as a Draft PR.  Link to PR: https://apiview.dev/Assemblies/Review/65ace81b3b0646a6ba3ba2d535458925
 * Link to samples for champion scenarios:
 
 ### TypeScript
@@ -44,23 +44,26 @@ We use an API review tool ([apiview](https://apiview.azurewebsites.net)) to supp
 
 * **Champion Scenario 1:  List Caller's role assignments.** 
   * User wants to get all role assignments they are assigned.
-  * Link to the code sample: [JAVA]() | [TS](./samples/Typescript/sample.md#)
+  * Link to the code sample: [C#](./samples/DotNet/sample.md#scenario-1-get-role-assignments-by-id) | [Python](./samples/Python/sample.md#scenario-1-get-role-assignments-by-id) | [JAVA](./samples/Java/sample.md#scenario-1-get-role-assignments-by-id) | [TS](./samples/Typescript/sample.md#scenario-1-get-role-assignments-by-id)
 
 * **Champion Scenario 2: List role definitions of synapse.**
   * User wants to get all role definitions. These definitions are provided by Synapse, user can't modify it.
-  * Link to the code sample: [JAVA]() | [TS](./samples/Typescript/sample.md#)
+  * Link to the code sample: [C#](./samples/DotNet/sample.md#scenario-2-list-role-definitions-of-synapse) | [Python](./samples/Python/sample.md#scenario-2-list-role-definitions-of-synapse) | [JAVA](./samples/Java/sample.md#scenario-2-list-role-definitions-of-synapse) | [TS](./samples/Typescript/sample.md#scenario-2-list-role-definitions-of-synapse)
 
 * **Champion Scenario 3: Create role assignments for specified user/service pricipal.**
   * Workspace Admin wants to set pecified user/service pricipal as a specified role. For example, administrator can set developerA as SQL Admin using this function. 
-  * Link to the code sample: [JAVA]() | [TS](./samples/Typescript/sample.md#)
+  * Link to the code sample: [C#](./samples/DotNet/sample.md#scenario-3-create-role-assignments-for-specified-user-service-pricipal) | [Python](./samples/Python/sample.md#scenario-3-create-role-assignments-for-specified-user-service-pricipal) | [JAVA](./samples/Java/sample.md#scenario-3-create-role-assignments-for-specified-user-service-pricipal) | [TS](./samples/Typescript/sample.md#scenario-3-create-role-assignments-for-specified-user-service-pricipal)
 
 * **Champion Scenario 4: List role assignments under specified role definition or user/service principal.**
   * Workspace Admin wants to list all role assignments information under specified role definition or user/service principal or all under current workspace. For example, administrator can list all roles of developerA.
-  * Link to the code sample: [JAVA]() | [TS](./samples/Typescript/sample.md#)
+  * Link to the code sample: [C#](./samples/DotNet/sample.md#scenario-4-list-role-assignments-under-specified-role-definition-or-user-service-principal) | [Python](./samples/Python/sample.md#scenario-4-list-role-assignments-under-specified-role-definition-or-user-service-principal) | [JAVA](./samples/Java/sample.md#scenario-4-list-role-assignments-under-specified-role-definition-or-user-service-principal) | [TS](./samples/Typescript/sample.md#scenario-4-list-role-assignments-under-specified-role-definition-or-user-service-principal)
 
 * **Champion Scenario 5: Delete specified role assignment using specified id.**
-  * Workspace Admin wants to delete a role assignment from using specified id. For example, administrator delete developerA's SQL Admin role using the spcefied id--developerA' SQL Admin role assignment id.
-  * Link to the code sample: [JAVA]() | [TS](./samples/Typescript/sample.md#)  
+  * Workspace Admin wants to delete a role assignment by the specified id. For example, administrator delete developerA's SQL Admin role using the spcefied id--developerA' SQL Admin role assignment id.
+  * Link to the code sample: [C#](./samples/DotNet/sample.md#scenario-5-delete-specified-role-assignment-using-specified-id) | [Python](./samples/Python/sample.md#scenario-5-delete-specified-role-assignment-using-specified-id) | [JAVA](./samples/Java/sample.md#scenario-5-delete-specified-role-assignment-using-specified-id) | [TS](./samples/Typescript/sample.md#scenario-5-delete-specified-role-assignment-using-specified-id)
 
 
+* **Champion Scenario 6: Check principal accessibility.**
+  * Workspace Admin wants to check accessibility using specified id.
+  * Link to the code sample: [C#](./samples/DotNet/sample.md#scenario-6-check-principal-accessibility) | [Python](./samples/Python/sample.md#scenario-6-check-principal-accessibility) | [JAVA](./samples/Java/sample.md#scenario-6-check-principal-accessibility) | [TS](./samples/Typescript/sample.md#scenario-6-check-principal-accessibility)
         
